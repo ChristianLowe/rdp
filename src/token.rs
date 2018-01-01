@@ -47,7 +47,7 @@ impl Default for Token {
 
 pub fn lookup_ident(ident: &str) -> Token {
     match ident {
-        "fn"    => Token::Function,
+        "def"   => Token::Function,
         "true"  => Token::True,
         "false" => Token::False,
         "if"    => Token::If,
@@ -59,7 +59,7 @@ pub fn lookup_ident(ident: &str) -> Token {
 
 #[test]
 fn lookup_ident_test() {
-    assert_eq!(lookup_ident("fn"), Token::Function);
+    assert_eq!(lookup_ident("def"), Token::Function);
 
     let ident_token = lookup_ident("asdf");
     match ident_token {
