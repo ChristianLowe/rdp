@@ -1,0 +1,6 @@
+[package]
+name = "rdp"
+version = "0.1.0"
+authors = ["Christian Lowe <christianlowe.cl@gmail.com>"]
+
+[dependencies]
